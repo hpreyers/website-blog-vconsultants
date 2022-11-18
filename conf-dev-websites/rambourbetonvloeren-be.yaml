@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: webapp-3
+  name: www2
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argocd/example/app-of-app/webapp-3
+    path: dev-master-websites/blog-vconsultants-be
     repoURL: https://github.com/hpreyers/k8s-test-argocd.git
     targetRevision: HEAD

@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: wwww
+  name: wwww2
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd-app1
+    namespace: dev-website-blog-vconsultants
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: website/blog-vconsultants-be
+    path: dev-master-websites/blog-vconsultants-be
     repoURL: https://github.com/hpreyers/root-websites.git
     targetRevision: HEAD

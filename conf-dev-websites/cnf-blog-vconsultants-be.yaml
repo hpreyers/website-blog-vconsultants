@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: dev-website-blog-vconsultants
     server: https://kubernetes.default.svc
-  project: default
+  project: websites
   source:
     path: dev-master-websites/blog-vconsultants-be
     repoURL: https://github.com/hpreyers/root-websites.git
